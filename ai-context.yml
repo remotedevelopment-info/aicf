@@ -1,0 +1,45 @@
+project:
+  name: "YourOnline CRM"
+  type: "laravel-saas"
+  
+languages:
+  php: "8.2"
+  javascript: "ES2022"
+  css: "CSS3"
+  sql: "PostgreSQL-15"
+
+frameworks:
+  laravel: "11.x"
+  livewire: "3.x"
+  tailwind: "3.x"
+  alpine: "3.x"
+
+architecture:
+  pattern: "domain-driven-design"
+  structure: "modular-monolith"
+  
+database:
+  primary: "postgresql"
+  version: "15"
+  features: ["json", "arrays", "uuid"]
+
+preferences:
+  - "Use modern PHP syntax"
+  - "Laravel 11 patterns only"
+  - "PostgreSQL-specific solutions"
+  - "Domain-driven organization"
+  - "Livewire over pure JS when possible"
+  - "Recommend in comments when php 8.3 or Laravel 12 updates are possible"
+
+constraints:
+  - "No jQuery"
+  - "No Bootstrap (Tailwind only)"
+  - "No legacy Laravel patterns"
+  
+testing:
+  framework: "pest"
+  style: "feature-heavy"
+  
+deployment:
+  platform: "docker"
+  environment: "local-development"
